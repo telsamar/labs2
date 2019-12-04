@@ -1,0 +1,173 @@
+- investigation:
+  travel_variant: "forward"
+  experiments:
+    - experiment:
+        number: 0
+        input_data:
+          buffer_size: "192 KiB"
+        results:
+          duration: "319 milliseconds"
+    - experiment:
+        number: 1
+        input_data:
+          buffer_size: "256 KiB"
+        results:
+          duration: "378 milliseconds"
+    - experiment:
+        number: 2
+        input_data:
+          buffer_size: "512 KiB"
+        results:
+          duration: "738 milliseconds"
+    - experiment:
+        number: 3
+        input_data:
+          buffer_size: "1024 KiB"
+        results:
+          duration: "1463 milliseconds"
+    - experiment:
+        number: 4
+        input_data:
+          buffer_size: "2048 KiB"
+        results:
+          duration: "3079 milliseconds"
+    - experiment:
+        number: 5
+        input_data:
+          buffer_size: "4096 KiB"
+        results:
+          duration: "6076 milliseconds"
+    - experiment:
+        number: 6
+        input_data:
+          buffer_size: "8192 KiB"
+        results:
+          duration: "12245 milliseconds"
+    - experiment:
+        number: 7
+        input_data:
+          buffer_size: "16384 KiB"
+        results:
+          duration: "23811 milliseconds"
+    - experiment:
+        number: 8
+        input_data:
+          buffer_size: "18432 KiB"
+        results:
+          duration: "26777 milliseconds"
+
+- investigation:
+  travel_variant: "backward"
+  experiments:
+    - experiment:
+        number: 0
+        input_data:
+          buffer_size: "192 KiB"
+        results:
+          duration: "475 milliseconds"
+    - experiment:
+        number: 1
+        input_data:
+          buffer_size: "256 KiB"
+        results:
+          duration: "636 milliseconds"
+    - experiment:
+        number: 2
+        input_data:
+          buffer_size: "512 KiB"
+        results:
+          duration: "1263 milliseconds"
+    - experiment:
+        number: 3
+        input_data:
+          buffer_size: "1024 KiB"
+        results:
+          duration: "2550 milliseconds"
+    - experiment:
+        number: 4
+        input_data:
+          buffer_size: "2048 KiB"
+        results:
+          duration: "5122 milliseconds"
+    - experiment:
+        number: 5
+        input_data:
+          buffer_size: "4096 KiB"
+        results:
+          duration: "10738 milliseconds"
+    - experiment:
+        number: 6
+        input_data:
+          buffer_size: "8192 KiB"
+        results:
+          duration: "21631 milliseconds"
+    - experiment:
+        number: 7
+        input_data:
+          buffer_size: "16384 KiB"
+        results:
+          duration: "42535 milliseconds"
+    - experiment:
+        number: 8
+        input_data:
+          buffer_size: "18432 KiB"
+        results:
+          duration: "48115 milliseconds"
+
+- investigation:
+  travel_variant: "random"
+  experiments:
+    - experiment:
+        number: 0
+        input_data:
+          buffer_size: "192 KiB"
+        results:
+          duration: "1735 milliseconds"
+    - experiment:
+        number: 1
+        input_data:
+          buffer_size: "256 KiB"
+        results:
+          duration: "2447 milliseconds"
+    - experiment:
+        number: 2
+        input_data:
+          buffer_size: "512 KiB"
+        results:
+          duration: "5148 milliseconds"
+    - experiment:
+        number: 3
+        input_data:
+          buffer_size: "1024 KiB"
+        results:
+          duration: "10233 milliseconds"
+    - experiment:
+        number: 4
+        input_data:
+          buffer_size: "2048 KiB"
+        results:
+          duration: "21631 milliseconds"
+    - experiment:
+        number: 5
+        input_data:
+          buffer_size: "4096 KiB"
+        results:
+          duration: "47803 milliseconds"
+    - experiment:
+        number: 6
+        input_data:
+          buffer_size: "8192 KiB"
+        results:
+          duration: "117453 milliseconds"
+    - experiment:
+        number: 7
+        input_data:
+          buffer_size: "16384 KiB"
+        results:
+          duration: "298208 milliseconds"
+    - experiment:
+        number: 8
+        input_data:
+          buffer_size: "18432 KiB"
+        results:
+          duration: "345865 milliseconds"
