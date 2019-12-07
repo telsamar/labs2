@@ -11,39 +11,34 @@ set(
   CACHE STRING "Default cache server"
 )
 
-include("tools/gate/cmake/HunterGate.cmake")
+include("tools/gate/HunterGate.cmake")
 
 HunterGate(
-  URL "https://github.com/ruslo/hunter/archive/v0.23.214.tar.gz"
-  SHA1 "e14bc153a7f16d6a5eeec845fb0283c8fad8c358"
+  URL "https://github.com/cpp-pm/hunter/archive/v0.23.218.tar.gz"
+  SHA1 "9a3594a61227967fb92159339ba326701b287b19"
 )
 
-project(Cache)
+
+# TDO: rename project and delete this comment
+
+project(Runner)
 string(APPEND CMAKE_CXX_FLAGS " -pedantic -Werror -Wall -Wextra")
 string(APPEND CMAKE_CXX_FLAGS " -Wno-unused-command-line-argument")
 string(APPEND CMAKE_CXX_FLAGS " -Wshadow -Wnon-virtual-dtor")
 
-add_executable(
-  ${PROJECT_NAME}
-  ${CMAKE_CURRENT_SOURCE_DIR}/sources/Cli.cpp
-  ${CMAKE_CURRENT_SOURCE_DIR}/sources/Experiment.cpp
-  ${CMAKE_CURRENT_SOURCE_DIR}/sources/main.cpp
-)
+hunter_add_package(GTest)
+find_package(GTest CONFIG REQUIRED)
 
-target_include_directories(
-  ${PROJECT_NAME}
-  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
-)
+add_library(Runner STATIC
+        ${CMAKE_CURRENT_SOURCE_DIR}/sources/Runner.cpp)
 
-enable_testing()
-add_test(NAME unit_tests COMMAND tests)
+add_executable(main
+        ${CMAKE_CURRENT_SOURCE_DIR}/sources/main.cpp
+        )
 
-if (BUILD_COVERAGE)
-  set(ENABLE_COVERAGE ON CACHE BOOL "Enable coverage build." FORCE)
-  list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
-  find_package(codecov)
-  add_coverage(${PROJECT_NAME})
-  add_coverage(tests)
-  list(APPEND LCOV_REMOVE_PATTERNS "'${PROJECT_SOURCE_DIR}/tests/*'")
-  coverage_evaluate()
-endif ()
+target_include_directories(Runner PUBLIC
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+        $<INSTALL_INTERFACE:include>
+        )
+
+target_link_libraries(main Runner)

@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Runner.hpp
+vector
+-
+iostream
+-
+chrono
+-
+random
+-
+algorithm
+-
+array
+-
+
+/cygdrive/c/Git/laba2/sources/main.cpp
+Runner.hpp
+-
+

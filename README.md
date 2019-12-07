@@ -1,7 +1,3 @@
-[![Build Status](https://travis-ci.com/Toliak/lab0302.svg?branch=master)](https://travis-ci.com/Toliak/lab0302)
-![Code size](https://img.shields.io/github/languages/code-size/Toliak/lab0302.svg)
-![GitHub Repo size](https://img.shields.io/github/repo-size/Toliak/lab0302.svg)
-
 # Лабораторная работа №2
 
 > Кэш - промежуточный буфер с быстрым доступом, содержащий информацию, которая может быть запрошена с наибольшей вероятностью. Доступ к данным в кэше осуществляется быстрее, чем выборка исходных данных из более медленной памяти или удаленного источника, однако её объём существенно ограничен по сравнению с хранилищем исходных данных.
@@ -62,7 +58,7 @@ cache_size['3'] = 8 mb;
 Ниже представлен формат и пример отчета:
 
 ```yaml
-- investigation:                                     |  - investigaion:
+investigation:                                       |  investigaion:
   travel_variant: <вариант_прохода>                  |    travel_order: "direction"
   experiments:                                       |    experiments:
   - experiment:                                      |    - experiment:
@@ -78,34 +74,8 @@ cache_size['3'] = 8 mb;
       results:                                       |        results:
         duration: <продолжительность>                |          duration: "2ns"
                                                      |
-- investigation:                                     |  - investigation:
+investigation:                                       |  investigation:
 ...                                                  |  ...
 ```
 
-### Отчет
-
-#### Intel Core i7-9750H
-
-Эксперимент 1:
-[Отчет](reports/report_1_i7_9750h.yml), 
-[График](https://jsfiddle.net/xfvz3k89/)
-
-Эксперимент 2:
-[Отчет](reports/report_1_i7_9750h.yml), 
-[График](https://jsfiddle.net/4tf7Lhuj/)
-
-#### Intel Core i7-7700HQ
-
-Эксперимент 1:
-[Отчет](reports/report_1_i7_7700hq.yml), 
-[График](https://jsfiddle.net/v36n2zja/)
-
-Эксперимент 2:
-[Отчет](reports/report_2_i7_7700hq.yml), 
-[График](https://jsfiddle.net/qsuLkp4v/)
-
-#### Intel Core i7-7700
-
-Эксперимент 1:
-[Отчет](reports/report_1_i7_7700.yml), 
-[График](https://jsfiddle.net/10mjn5cp/)
+⚠️ В отчет также необходимо добавить общий график с результатами всех исследований. ⚠️
