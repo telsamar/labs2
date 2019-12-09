@@ -1,4 +1,4 @@
-//Copyright 2019 <LinkIvan333>
+//Copyright 2019 <telsamar>
 #ifndef INCLUDE_RUNNER_HPP_
 #define INCLUDE_RUNNER_HPP_
 #include <vector>

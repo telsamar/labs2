@@ -1,4 +1,4 @@
-//Copyright 2019 <LinkIvan333>
+//Copyright 2019 <telsamar>
 #include <Runner.hpp>
 int main() {
     int a;
