@@ -1,5 +1,4 @@
 os: linux
-language: cpp
 services:
 - docker
 

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Runner.dir/sources/Runner.cpp.o"
-  "libRunnerd.pdb"
   "libRunnerd.a"
+  "libRunnerd.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
