@@ -1,4 +1,4 @@
-/cygdrive/d/LABB01/LABA2/laba2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/cygdrive/d/LABB01/LABA2/laba2/cmake-build-debug/CMakeFiles/Runner.dir
-/cygdrive/d/LABB01/LABA2/laba2/cmake-build-debug/CMakeFiles/edit_cache.dir
-/cygdrive/d/LABB01/LABA2/laba2/cmake-build-debug/CMakeFiles/main.dir
+/cygdrive/c/универ/GITHUB/labs2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/c/универ/GITHUB/labs2/cmake-build-debug/CMakeFiles/Runner.dir
+/cygdrive/c/универ/GITHUB/labs2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/cygdrive/c/универ/GITHUB/labs2/cmake-build-debug/CMakeFiles/main.dir

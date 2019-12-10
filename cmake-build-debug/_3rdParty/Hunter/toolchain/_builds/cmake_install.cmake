@@ -1,4 +1,4 @@
-# Install script for directory: /cygdrive/d/LABB01/LABA2/laba2/cmake-build-debug/_3rdParty/Hunter/toolchain
+# Install script for directory: /cygdrive/c/универ/GITHUB/labs2/cmake-build-debug/_3rdParty/Hunter/toolchain
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/cygdrive/d/LABB01/LABA2/laba2/cmake-build-debug/_3rdParty/Hunter/toolchain/_builds/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/cygdrive/c/универ/GITHUB/labs2/cmake-build-debug/_3rdParty/Hunter/toolchain/_builds/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
