@@ -21,6 +21,6 @@ array
 -
 
 /cygdrive/c/универ/GITHUB/labs2/sources/Runner.cpp
-Runner.hpp
+../include/Runner.hpp
 -
 

@@ -1,4 +1,4 @@
-//Copyright 2019 <LinkIvan333>
+//Copyright 2019 <telsamar>
 
 #include <gtest/gtest.h>
 
